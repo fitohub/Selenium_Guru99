@@ -48,6 +48,15 @@ public class TestSelenium {
         Select toDay = new Select(driver.findElement(By.name("toDay")));
         toDay.selectByVisibleText("17");
 
+        // FLIGHT FINDER - Flight Details
+
+        WebElement findFlights = driver.findElement(By.name("findFlights"));
+        findFlights.click();
+
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+
+
+
 //        WebElement button = driver.findElement(By.xpath("//input[@name='btnLogin']"));
 //        button.click();
     }
